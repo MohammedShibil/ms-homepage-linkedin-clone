@@ -1,0 +1,560 @@
+:root {
+    --black: #000;
+    --grey: #121212;
+    --light-grey: #232323;
+    --white: #ffffff;
+    --off-white: #f4f2ee;
+}
+
+body, html {
+    height: 100%;
+    margin: 0rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--off-white);
+    color: var(--white);
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    background-color: var(--off-white);
+    padding: 0.5rem;
+    overflow-y: auto;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    align-items: center;
+    background-color: var(--white);
+    z-index: 1000;
+    padding: 0.5rem 1.5rem;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
+
+.logo-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    opacity: 0.7rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0.1rem 1.1rem;
+}
+
+.logo-flex:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.logo-flex img {
+    height: 2.125rem;
+    width: 2.125rem;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 700px;
+    background: #edf3f8;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1.5rem;
+    margin-left: -5.5rem;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-family: "Nunito", sans-serif;
+    margin-right: 2.5rem;
+}
+
+form img{
+    margin-right: 2.5rem;
+    height: 2.125rem;
+    width: 2.125rem;
+}
+
+a.icon-block {
+    display:inline-block;
+    width:5rem;
+    float:left;
+    text-align:center;
+}
+
+a.icon-block i,
+a.icon-block span {
+    display:block;
+    width:100%;
+    clear:both;
+}
+
+.icon-nav-me img {
+    border-radius: 50% !important;
+}
+
+.left-sidebar {
+    flex-basis: 15rem;
+    background-color: var(--off-white);
+    margin-right: 1.5rem;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    /* padding-bottom: 1.25rem; */
+}
+
+a.top-profile-block {
+    display:inline-block;
+    width:5rem;
+    float:left;
+    text-align:center;
+}
+
+a.top-profile-block i,
+a.top-profile-block span {
+    display:block;
+    width:100%;
+    clear:both;
+}
+
+.top-profile-block h2 {
+    margin-top: 5rem;
+    justify-content: center;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.top-profile-block p {
+    margin-left: 0.5rem;
+    margin-top: 0rem;
+    font-size: 0.8rem !important;
+    color: rgb(169, 164, 164) !important;
+}
+
+.hero-avatar {
+    width: 160px;
+    height: 160px;
+    /* position: absolute; */
+    /* bottom: -80px; */
+    left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -4rem 0; /* Adjust the top and bottom margin to control the gap */
+    padding: 0.1rem 0.1rem;
+
+}
+
+.hero-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 5rem;
+    margin-left: 35%;
+    padding: 1rem 1.5rem;
+}
+
+.main-content {
+    flex-basis: 40rem;
+    /* background-color: var(--white); */
+    /* overflow-y: auto; */
+    border-radius: 0.5rem;
+    padding: 0rem 1rem;
+    /* padding-bottom: 6rem; */
+    margin-top: 1rem;
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 1.25rem;
+}
+
+.right-sidebar {
+    flex-basis: 18rem;
+    background-color: var(--white);
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    margin-right: 2.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.top-profile {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    /* margin-bottom: 1.25rem; */
+}
+
+.top-profile h2 {
+    color: black;
+    font-weight: 900;
+}
+
+.link-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    opacity: 0.7rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.link-flex:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.link-flex img {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.link-flex p {
+    font-size: 1rem;
+    color: var(--light-grey);
+}
+
+.flex-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    padding: 0.1rem 0.1rem;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.top-profile .flex-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -1rem 0; /* Adjust the top and bottom margin to control the gap */
+    padding: 0.1rem 0.1rem;
+}
+
+.flex-top img {
+    height: 0.7rem;
+    width: 0.7rem;
+    /* opacity: 0.8; */
+    margin-top: 0.5rem;
+}
+
+.flex-top p {
+    font-size: 0.8rem;
+    /* opacity: 0.8; */
+    color: var(--light-grey);
+    font-family: "Nunito", sans-serif;
+}
+
+.flex-top:hover {
+    /* opacity: 1; */
+    background-color: var(--off-white);
+}
+
+.flex-top img:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.hl {
+    border-top: 1px solid lightgray;
+    flex: 0;
+    width: 100%;
+}
+
+.vl {
+    border-top: 1px solid lightgray;
+    flex: 0;
+    height: 100%;
+}
+
+a.flex-top {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    color: var(--black);
+}
+
+p.premium:hover {
+    color: #0a66c2;
+}
+
+/* Main Content Area */
+
+.status-update {
+    width: 100%;
+    border: 1px solid white;
+    padding: 10px;
+    /* margin: 10px; */
+    display: flex;
+    align-items: flex-start;
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
+    background-color: var(--white);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 00.1rem 0;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.post-status {
+    padding: 0.1rem 1rem;
+    font-family: "Nunito", sans-serif;
+}
+
+.post-status textarea {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5rem;
+    resize: none;
+}
+
+.status-actions button {
+    margin-right: 10px;
+    padding: 5px 30px;
+    border: 1px solid var(--white);
+    background-color: #f4f4f4;
+    cursor: pointer;
+    background-color: var(--white);
+    font-family: "Nunito", sans-serif;
+}
+
+.status-actions button:hover {
+    background-color: var(--off-white);
+}
+
+.status-actions button img {
+    height: 1rem;
+    width: 1rem;
+    /* opacity: 0.8; */
+    margin-top: 0.5rem;
+    padding: 0.1rem 0.5rem;
+}
+
+.post {
+    width: 100%;
+    margin-bottom: -0.813rem;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+.user-details {
+    color: var(--black);
+}
+
+.user-details p {
+    margin: 0;
+    padding: 0.1rem;
+    line-height: 1;
+}
+
+.feed-name {
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.feed-followers, .feed-time {
+    font-size: 0.7rem;
+}
+
+.post-time {
+    color: var(--black);
+}
+
+.post-description {
+    color: var(--black);
+    font-size: medium;
+}
+
+.post-image {
+    width: 35rem;
+    height: 35rem;
+    /* object-fit: cover; */
+    object-position: center;
+    margin: 0;
+    padding: 0.1rem 0.1rem;
+}
+
+.like-comment-flexbox {
+    display: flex;
+    justify-content: space-between; /* Add this line */
+    align-items: center;
+    /* opacity: 0.7rem; */
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: -5rem -5rem;
+}
+
+.like-comment-flexbox p {
+    font-size: 1rem;
+    color: var(--light-grey);
+}
+
+.like-comment-flexbox p.like-number {
+    flex: 1; /* This ensures it's on the left-most side */
+    margin-right: auto; /* Pushes it to the left */
+    font-size: 0.8rem;
+
+}
+
+.like-comment-flexbox p.comment-number {
+    flex: 0.3; /* This ensures it's on the right-most side */
+    margin-left: auto; /* Pushes it to the right */
+    font-size: 0.8rem;
+
+}
+
+.like-comment-flexbox img {
+    height: 0.7rem;
+    width: 0.7rem;
+    /* opacity: 0.8; */
+    margin-top: 0.5rem;
+}
+
+.like-number img {
+    margin-right: 5px; /* Adjust the value as needed */
+}
+
+.post-actions {
+    margin-top: 1rem;
+    display: flex; /*this line to maje the buttons flex items*/
+    align-items: center;
+}
+
+.post-actions button {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 5px 30px;
+    border: 1px solid var(--white);
+    background-color: #f4f4f4;
+    cursor: pointer;
+    background-color: var(--white);
+    font-family: "Nunito", sans-serif;
+}
+
+.post-actions button:hover {
+    background-color: var(--off-white);
+}
+
+.post-actions button img {
+    height: 1rem;
+    width: 1rem;
+    margin-top: 0.1rem;
+    padding: 0.1rem 0.5rem;
+    margin-right: 5px; /*for adding some space between image and text*/
+}
+
+/* Right Sidebar */
+
+p.right-top-news {
+    font-size: 16px;
+}
+
+.news-bullets p {
+    margin-left: 5px;
+}
+.news-bullets img {
+    margin-right: 10px;
+    margin-left: -12px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.footer p {
+    color: var(--black);
+    font-size: 12px;
+    padding: -4rem 0.9rem;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: -1rem;
+}
+.footer p:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+.footer-logo {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 0.1rem;
+    margin-top: 0;
+    padding: 0rem 0rem;
+    /* background-color: transparent; */
+    cursor: pointer;
+    color: var(--black);
+    font-size: 12px;
+}
+
+.footer-logo img {
+    height: 45px;
+    width: 45px; 
+    margin-right: 5px;
+    margin-bottom: -16px;  
+    margin-left: 40%;
+    padding: -5rem -5rem;
+    
+}
+
+.footer-logo img:hover {
+    cursor: default;
+}
+
+.footer-logo p:hover {
+    cursor: text;
+}
+
